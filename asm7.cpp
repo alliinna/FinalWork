@@ -4,7 +4,12 @@
 int main()
 {
     setlocale(LC_ALL, "RU");
-    int a1, b, c, d, e, y;
+    int a1; // целочисленое число a1
+    int b;
+    int c;
+    int d;
+    int e;
+    int y;
 
     char prn[] = "Введите a1, b, c, d, e:\n";
     char scn[] = "%d %d %d %d %d";
