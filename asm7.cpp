@@ -4,9 +4,9 @@
 int main()
 {
     setlocale(LC_ALL, "RU");
-    int a, b, c, d, e, y;
+    int a1, b, c, d, e, y;
 
-    char prn[] = "Введите a, b, c, d, e:\n";
+    char prn[] = "Введите a1, b, c, d, e:\n";
     char scn[] = "%d %d %d %d %d";
     char out[] = "y = %d\n";
 
@@ -24,14 +24,14 @@ int main()
         push eax
         lea eax, b
         push eax
-        lea eax, a
+        lea eax, a1
         push eax
         lea eax, scn
         push eax
         call scanf
         add esp, 24  
 
-        mov eax, a       
+        mov eax, a1       
         add eax, b       
         cdq              
         idiv c           
